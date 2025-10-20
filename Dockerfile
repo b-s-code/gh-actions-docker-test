@@ -1,4 +1,4 @@
-FROM ubuntu:jammy AS builder
+FROM FROM --platform=linux/arm64 ubuntu:jammy AS builder
 WORKDIR /
 RUN apt-get update && apt-get install -y --no-install-recommends \
   build-essential ca-certificates git libz-dev python3 cmake libgsl-dev libxerces-c-dev xsdcxx libboost-dev \
