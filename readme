@@ -1,0 +1,8 @@
+
+This repo demonstrates how to build a linux/arm64 docker image of OpenMalaria.
+
+- Follow instructions here https://docs.docker.com/guides/gha/ for using GitHub Actions to do Docker image builds.
+- Use OpenMalaria Dockerfile instead of sample Dockerfile provided at above page.
+- Modify docker-ci.yml to use ubuntu-24.04-arm instead of ubuntu-latest.
+- Modify git clone command in Dockerfile to use a branch/tag which supports linux/arm64 (shema-48.0 does not support linux/arm64).
+
